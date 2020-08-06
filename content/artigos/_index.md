@@ -7,6 +7,6 @@ tags:
 weight: 3
 ---
 
-![](/images/undraw_placeholders_rklh.png?width=400px)
+![](/images/undraw_placeholders_rklh.png?width=300px)
 
 {{% children style="h4" description="true" %}}

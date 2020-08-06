@@ -6,6 +6,6 @@ tags:
 weight: 2
 ---
 
-![](/images/undraw_teaching_f1cm.svg?width=400)
+![](/images/undraw_developer_activity_bv83.svg?width=300)
 
 {{% children style="h4" description="true" %}}
