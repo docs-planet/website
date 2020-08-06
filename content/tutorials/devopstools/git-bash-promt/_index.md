@@ -1,6 +1,8 @@
 ---
 title: "Git bash prompt"
-description: "Instalando o git bash prompt e melhorando nossa visibilidade"
+description: "Instalando um git-bash-prompt para melhorar nossa visibilidade no git"
+asciinema: true
+comments: true
 tags:
   - git
 ---
@@ -11,14 +13,14 @@ Para ter uma melhor visibilidade do que passa em nossos projetos que estão vers
 
 ## Instalação
 
-1. Baixar o repositorio contendo o software
+Baixar o repositorio contendo o software
 
 ```shell
 cd ~
 git clone https://github.com/jenciso/bash-git-prompt.git .bash-git-prompt --depth=1
 ```
 
-2. Adicionar algumas linhas dentro do arquivo `.bashrc`
+Adicionar algumas linhas dentro do arquivo `.bashrc`
 
 ```bash
 GIT_PROMPT_ONLY_IN_REPO=0
@@ -26,5 +28,23 @@ GIT_PROMPT_THEME=Single_line_Minimalist
 source ~/.bash-git-prompt/gitprompt.sh
 ```
 
+-----
+
+{{< asciinema key="351993" rows="28" cols="110" preload="1" poster="npt:0:01" speed="1.5" >}}
+
+
 ## Testando
+
+Baixar qualquer repositorio git. Ex: https://github.com/jenciso/node-express-azure e fazemos uma simples modificação
+
+```shell
+git clone https://github.com/jenciso/node-express-azure
+cd node-express-azure
+rm README.md
+```
+Agora podemos ver que estamos na branch `master` e o shell nos indica que temos um cambio em nosso repositorio.
+
+-----
+
+{{< asciinema key="351996" rows="28" cols="110" preload="1" poster="npt:0:01" speed="1.5" >}}
 
