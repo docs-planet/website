@@ -1,9 +1,10 @@
 ---
-title: "Artigos 📑"
+title: "📑 Artigos"
 description: "Material coletado no dia a dia"
 tags:
-  - Tutoriais
-weight: 1
+  - artigos
+  - articles
+weight: 3
 ---
 
 ![](/images/undraw_placeholders_rklh.png?width=400px)

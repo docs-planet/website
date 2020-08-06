@@ -1,9 +1,9 @@
 ---
-title: "Tutoriais 💻"
+title: "💻 Tutoriais"
 description: "Tutoriais diversos"
 tags:
   - Tutoriais
-weight: 1
+weight: 2
 ---
 
 ![](/images/undraw_teaching_f1cm.svg?width=400)

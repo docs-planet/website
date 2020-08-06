@@ -1,8 +1,9 @@
 ---
-title: "Documentações ✍"
+title: "✍ Documentações"
 description: "Conceitos, apresentações, conteúdo em geral"
 tags:
   - docs
+  - documentation
 weight: 1
 ---
 
