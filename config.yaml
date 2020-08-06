@@ -3,6 +3,7 @@ languageCode: en-us
 title: Docs Planet
 theme: hugo-theme-learn
 disqusShortname: docs-e-unicred-com-br
+pygmentsUseClasses: true
 outputs:
   home:
     - HTML

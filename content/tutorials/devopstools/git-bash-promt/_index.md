@@ -13,14 +13,14 @@ Para ter uma melhor visibilidade do que passa em nossos projetos que estão vers
 
 1. Baixar o repositorio contendo o software
 
-```console
+```shell
 cd ~
 git clone https://github.com/jenciso/bash-git-prompt.git .bash-git-prompt --depth=1
 ```
 
 2. Adicionar algumas linhas dentro do arquivo `.bashrc`
 
-```console
+```bash
 GIT_PROMPT_ONLY_IN_REPO=0
 GIT_PROMPT_THEME=Single_line_Minimalist
 source ~/.bash-git-prompt/gitprompt.sh
