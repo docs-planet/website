@@ -1,0 +1,30 @@
+baseURL: /
+languageCode: en-us
+title: Docs Planet
+theme: hugo-theme-learn
+disqusShortname: docs-e-unicred-com-br
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+params:
+  editURL: >-
+    https://github.com/docs-planet/website/edit/master/content/
+  author: Juan Enciso
+  description: "Conteudo diverso de documentacao, tutoriais, dicas entre outros"
+  disableNextPrev: true
+  disableInlineCopyToClipBoard: true
+  themeVariant: unicred
+  comments: false
+  asciinema: true
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+menu:
+  shortcuts:
+    - name: <i class='fas fa-bookmark'></i> Autor
+      identifier: autor
+      url: "https://jenciso.github.io/"
+      weight: 20
