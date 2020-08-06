@@ -2,7 +2,7 @@ baseURL: /
 languageCode: en-us
 title: Docs Planet
 theme: hugo-theme-learn
-disqusShortname: docs-e-unicred-com-br
+disqusShortname: docs-planet-github-io
 pygmentsUseClasses: true
 outputs:
   home:
