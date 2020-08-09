@@ -1,6 +1,7 @@
 ---
 title: "💻 Tutoriais"
 description: "Tutoriais diversos"
+chapter: true
 tags:
   - Tutoriais
 weight: 2

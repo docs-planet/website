@@ -1,6 +1,6 @@
 # Hugo Learn Theme
 
-This repository contains a theme for [Hugo](https://gohugo.io/), based on great [Grav Learn Theme](http://learn.getgrav.org/).
+This repository contains a theme for [Hugo](https://gohugo.io/), based on great [Grav Learn Theme](https://learn.getgrav.org/).
 
 Visit the [theme documentation](https://learn.netlify.com/en/) to see what is going on. It is actually built with this theme.
 
@@ -24,9 +24,9 @@ Visit the [theme documentation](https://learn.netlify.com/en/) to see what is go
 
 Navigate to your themes folder in your Hugo site and use the following commands:
 
-```
-$ cd themes
-$ git clone https://github.com/matcornic/hugo-theme-learn.git
+```shell
+cd themes/
+git clone https://github.com/matcornic/hugo-theme-learn.git
 ```
 
 Check that your Hugo version is minimum `0.25` with `hugo version`.
@@ -58,3 +58,40 @@ Many thanks to [@vjeantet](https://github.com/vjeantet/) for the fork [docdock](
 ## License
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmatcornic%2Fhugo-theme-learn.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmatcornic%2Fhugo-theme-learn?ref=badge_large)
+
+## Releasing
+
+Somewhat work-in-progress steps to release with [gren](https://github.com/github-tools/github-release-notes)
+
+- Check all MRs assigned to the milestone are closed or pushed back to another release
+- Close the milestone
+- Check merged MRs on the milestone have a tag (Bug, Enhancement, etc.)
+- Tag and push the repo
+
+  ```shell
+  git tag <tag>
+  git push origin <tag>
+  ```
+
+- Generate CHANGELOG.md with _gren_
+
+  ```shell
+  gren changelog  --override --generate --tags=all
+  ```
+
+- Fix the date for the current release in CHANGELOG.md
+- Add the changelog to git and update the tag
+
+  ```shell
+  git add CHANGELOG.md
+  git commit -m "Ship tag <tag>"
+  git push origin master
+  git tag -f <tag>
+  git push --force origin <tag>
+  ```
+
+- Generate release with _gren_
+
+  ```shell
+  gren release -t <tag>
+  ```

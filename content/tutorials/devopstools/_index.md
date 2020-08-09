@@ -2,8 +2,12 @@
 title: "DevOps Tools"
 description: "Conteudo relacionado a ferramenta Azure Devops"
 weight: 1
+chapter: true
 tags:
   - azure
 ---
 
-{{% children style="h4" description="true" %}}
+### DevopsTools
+
+![](/images/devopstools.png)
+

@@ -1,5 +1,6 @@
 ---
-title: "✍ Documentações"
+title: "Documentações"
+menuTitle: "✍ Documentações"
 description: "Conceitos, apresentações, conteúdo em geral"
 tags:
   - docs

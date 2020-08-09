@@ -16,7 +16,7 @@ params:
   description: "Conteudo diverso de documentacao, tutoriais, dicas entre outros"
   disableNextPrev: true
   disableInlineCopyToClipBoard: true
-  themeVariant: unicred
+  themeVariant: custom-docs
   comments: false
   asciinema: true
 markup:
