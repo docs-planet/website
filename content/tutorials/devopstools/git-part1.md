@@ -1,6 +1,6 @@
 ---
-title: "Git howto"
-menuTitle: "Git Basico"
+title: "Git Howto (Parte 1)"
+menuTitle: "Git (Parte 1)"
 description: "Tutorial de GIT"
 weight: 1
 date: "2020-08-09"
@@ -12,7 +12,7 @@ tags:
 ---
 
 {{% notice note %}}
-Este tutorial esta baseado no seguinte tutorial https://githowto.com
+Este tutorial esta baseado do seguinte documento: https://githowto.com
 {{% /notice %}}
 
 ## 1. Prerequisitos
@@ -138,7 +138,7 @@ Na hora de executar o comando `git commit` vamos omitor o uso do flag `-m`, dest
 * Variável de ambiente VISUAL
 * Variável de ambiente EDITOR
 
-> No me caso meu editor é 'vi'
+No me caso meu editor é 'vi'. Caso deseje modificar seu editor de forma permanente, edite o arquivo `~/.gitconfig`
 
 Logo de executar o commit, iremos colocar como comentario "Added h1 tag"
 
@@ -322,4 +322,52 @@ cat hello.html
 
 ## 13. Adicionando tags a versões
 
+Vamos chamar a versão atual do nosso programa "Hello" de versão 1 (v1).
+
+#### Criando a tag do primeiro
+
+```shell
+git tag v1
+```
+
+#### Tags em versões antigas
+
+Vamos adicionar uma tag à versão anterior da nossa atual versão com o nome `v1-beta`. Nós vamos usar a notação ^ indicando “o pai de v1”.
+Se a notação `v1^` gera problemas, tente usar `v1~1` para referenciar a mesma versão. Essa notação significa “a primeira versão antes de v1”.
+
+```shell
+git checkout v1^
+cat hello.html
+```
+
+{{< asciinema key="git-basico15" rows="28" cols="110" preload="1" poster="npt:0:20" speed="1.5" >}}
+
+Essa é a versão com as tags `<html>` e `<body>`, mas sem `<head>`. Vamos fazer dessa a versão `v1-beta`.
+
+```shell
+git tag v1-beta
+```
+
+#### Acessando através do nome da tag
+
+```shell
+git checkout v1
+git checkout v1-beta
+```
+
+{{< asciinema key="git-basico16" rows="28" cols="110" preload="1" poster="npt:0:20" speed="1.5" >}}
+
+#### Vendo tags com o comando tag
+
+```shell
+git tag
+```
+#### Vendo tags nos logs
+
+```shell
+git hist master --all
+```
+{{< asciinema key="git-basico17" rows="28" cols="110" preload="1" poster="npt:0:20" speed="1.5" >}}
+
+Você pode ver as tags (v1 e v1-beta) listadas no log juntamente com o nome do branch (master). O HEAD mostra o commit em que você está atualmente (v1-beta).
 
