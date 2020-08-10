@@ -3,7 +3,7 @@ languageCode: en-us
 title: Docs Planet
 theme: hugo-theme-learn
 disqusShortname: docs-planet-github-io
-pygmentsUseClasses: true
+pygmentsUseClasses: false
 outputs:
   home:
     - HTML
