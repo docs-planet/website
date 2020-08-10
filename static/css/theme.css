@@ -482,7 +482,6 @@ div.notices {
 div.notices p {
     padding: 15px;
     display: block;
-    font-size: 1rem;
     margin-top: 0rem;
     margin-bottom: 0rem;
     color: #666;
@@ -549,7 +548,6 @@ section.attachments label {
 section.attachments .attachments-files {
     padding: 15px;
     display: block;
-    font-size: 1rem;
     margin-top: 0rem;
     margin-bottom: 0rem;
     color: #666;
