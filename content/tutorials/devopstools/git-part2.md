@@ -386,7 +386,7 @@ ls -C .git/objects/<dir>
 
 Você deve ver várias pastas nomeadas com dois caracteres. As duas primeiras letras do hash sha1 do objeto armazenado no git são o nome dos seus diretórios.
 
-Vamos dar uma olhada em uma das pastas nomeadas com dois caracteres. Devem ter arquivos com nomes de 38 caracteres. Esses arquivos cont&ecute;m os objetos armazenados no git. Eles são comprimidos e encriptados, então é impossível ver seu conteúdo diretamente. Vamos dar uma olhada melhor no diretório Git.
+Vamos dar uma olhada em uma das pastas nomeadas com dois caracteres. Devem ter arquivos com nomes de 38 caracteres. Esses arquivos contém os objetos armazenados no git. Eles são comprimidos e encriptados, então é impossível ver seu conteúdo diretamente. Vamos dar uma olhada melhor no diretório Git.
 
 {{< asciinema key="git-basico34" rows="28" cols="110" preload="1" poster="npt:0:17" speed="1.5" >}}
 
@@ -468,6 +468,6 @@ E aí está. Objetos árvores, objetos de commits e objetos blob são exibidos d
 
 #### Explore você mesmo
 
-O repositório git pode ser explorado manualmente. Tente achar manualmente o arquivo hello.html original do primeiro commit com ajuda da hash SHA1 referenciada no último commit.
+O repositório git pode ser explorado manualmente. Tente achar manualmente o arquivo hello.html original do primeiro commit com ajuda da hash `SHA1` referenciada no último commit.
 
 ## 24. Criando um Branch
