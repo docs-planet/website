@@ -1,5 +1,5 @@
 ---
-title: "Git Howto (Parte 1)"
+title: "Git (Parte 1)"
 menuTitle: "Git (Parte 1)"
 description: "Tutorial de GIT"
 weight: 1
