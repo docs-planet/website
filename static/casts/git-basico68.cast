@@ -1,0 +1,13 @@
+{"version": 2, "width": 110, "height": 28, "timestamp": 1597288648, "idle_time_limit": 2.0, "env": {"SHELL": "/bin/bash", "TERM": "xterm-256color"}}
+[0.987124, "o", "\u001b[0;32m✔\u001b[0;0m \u001b[0;37m00:17:29 [x420ua]\u001b[0;0m \u001b[0;36mcloned_hello\u001b[0;0m\u001b]0;~/cloned_hello\u0007 [\u001b[0;35mmaster\u001b[0;0m ↓·1\u001b[0;0m \u001b[1;32m✔\u001b[0;0m\u001b[0;0m\u001b[0;0m]\u001b[0;0m $ "]
+[4.744648, "o", "c"]
+[4.834421, "o", "a"]
+[5.018806, "o", "t"]
+[5.108432, "o", " "]
+[5.568841, "o", "R"]
+[5.66024, "o", "E"]
+[5.724118, "o", "A"]
+[5.916147, "o", "DME.md "]
+[6.45814, "o", "\r\n"]
+[6.468027, "o", "## Tutorial\r\n\r\nThis is the Hello World example from the git tutorial.\r\n"]
+[6.543224, "o", "\u001b[0;32m✔\u001b[0;0m \u001b[0;37m00:17:35 [x420ua]\u001b[0;0m \u001b[0;36mcloned_hello\u001b[0;0m\u001b]0;~/cloned_hello\u0007 [\u001b[0;35mmaster\u001b[0;0m ↓·1\u001b[0;0m \u001b[1;32m✔\u001b[0;0m\u001b[0;0m\u001b[0;0m]\u001b[0;0m $ "]

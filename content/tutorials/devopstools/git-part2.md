@@ -470,4 +470,3 @@ E aí está. Objetos árvores, objetos de commits e objetos blob são exibidos d
 
 O repositório git pode ser explorado manualmente. Tente achar manualmente o arquivo hello.html original do primeiro commit com ajuda da hash `SHA1` referenciada no último commit.
 
-## 24. Criando um Branch
