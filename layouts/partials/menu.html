@@ -99,6 +99,8 @@
  {{with .sect}}
   {{if and .IsSection (or (not .Params.hidden) $.showhidden)}}
     {{safeHTML .Params.head}}
+    {{ $isParent := or (.IsAncestor $currentNode) (.Params.alwaysopen) }}
+    {{ $numberOfPages := (add (len .Pages) (len .Sections)) }}
     <li data-nav-id="{{.RelPermalink}}" title="{{.Title}}" class="dd-item 
         {{if .IsAncestor $currentNode }}parent{{end}}
         {{if eq .File.UniqueID $currentFileUniqueID}}active{{end}}
@@ -106,6 +108,13 @@
         ">
       <a href="{{.RelPermalink}}">
           {{safeHTML .Params.Pre}}{{or .Params.menuTitle .LinkTitle .Title}}{{safeHTML .Params.Post}}
+          {{ if and (ne $numberOfPages 0) (ne .Parent .Site.Home) }}
+            {{if $isParent }}
+              <i class="fas fa-caret-down"></i>
+            {{ else }}
+              <i class="fas fa-caret-right"></i>
+            {{ end }}
+          {{ end }}
           {{ if $showvisitedlinks}}
             <i class="fas fa-check read-icon"></i>
           {{ end }}
