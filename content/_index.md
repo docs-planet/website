@@ -8,4 +8,4 @@ description: ""
 O Docs Planet é um repostitorio de conteúdo de tutoriais sobre tecnologias usadas no mundo DevOps
 
 
-![](/images/undraw_online_articles_79ff.svg)
+![](https://blogdeuncuantitativo.files.wordpress.com/2018/07/elearning.jpg)

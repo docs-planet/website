@@ -7,6 +7,6 @@ tags:
 weight: 2
 ---
 
-![](/images/undraw_developer_activity_bv83.svg?width=300)
+![](https://como-funciona.com/wp-content/uploads/2019/01/c%C3%B3mo-funciona-un-tutorial.jpg?width=700px)
 
-{{% children style="h4" description="true" %}}
+

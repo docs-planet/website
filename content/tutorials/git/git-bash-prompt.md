@@ -1,10 +1,12 @@
 ---
-title: "Git bash prompt"
+title: "Git Bash Prompt"
 description: "Instalando um git-bash-prompt para melhorar nossa visibilidade no git"
 asciinema: true
+weight: 1
 comments: true
 tags:
   - git
+  - bash
 ---
 
 ## Intro

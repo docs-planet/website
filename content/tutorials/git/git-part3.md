@@ -2,7 +2,7 @@
 title: "Git (Parte 3)"
 menuTitle: "Git (Parte 3)"
 description: "Tutorial de GIT"
-weight: 3
+weight: 4
 date: "2020-08-11"
 LastModifierDisplayName: Juan Enciso
 LastModifierEmail: juan.enciso@gmail.com
