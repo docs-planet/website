@@ -5,10 +5,11 @@ tags:
  - git
 ---
 
-### Git - artigos
+### Git Artigos
 
 * https://www.hostinger.com.br/tutoriais/git-branch/
 * https://www.xpertup.com/blog/technology/git-and-github-fundamentals/
+* https://dev.to/usmslm102/git-cheat-sheet-4f5a
 
 ### Git Tutoriais
 
@@ -23,3 +24,4 @@ tags:
 ### Gitflow
 
 * https://medium.com/@olivier.bossel/git-flow-the-right-way-to-go-f2a65c315818
+
