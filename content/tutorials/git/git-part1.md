@@ -15,6 +15,8 @@ tags:
 Este tutorial esta baseado do seguinte documento: https://githowto.com
 {{% /notice %}}
 
+![](https://www.xpertup.com/wp-content/uploads/2019/04/git.jpg)
+
 ## 1. Prerequisitos
 
 * Instalar git-bash-prompt seguindo este [tutorial](/tutorials/devopstools/git-bash-prompt/)

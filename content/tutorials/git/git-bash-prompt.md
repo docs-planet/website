@@ -9,6 +9,8 @@ tags:
   - bash
 ---
 
+![](https://i.imgur.com/2N5Wh1K.png)
+
 ## Intro
 
 Para ter uma melhor visibilidade do que passa em nossos projetos que estão versionados quando estamos trabalhando de forma local, podemos usar ferramentas como é o caso de [git-bash-prompt](https://github.com/magicmonty/bash-git-prompt)

@@ -9,5 +9,5 @@ tags:
 
 ### GIT - Controle de Versão
 
-![](https://cdn.thingiverse.com/renders/0e/85/2b/84/08/c0602b64a66d1e5e7128305c19cd4e9d_preview_featured.jpg)
+![](https://www.hostinger.com.br/tutoriais/wp-content/uploads/sites/12/2019/06/Os-Melhores-Clientes-Git-GUI-de-2019-para-Windows-Linux-e-Mac.png)
 
