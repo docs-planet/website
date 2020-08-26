@@ -1,8 +1,9 @@
 ---
-title: Git
-description: Diversos artigos sobre git
+title: "📑 Links"
+description: "Material coletado no dia a dia"
 tags:
- - git
+  - artigos
+  - articles
 ---
 
 ### Git Artigos
@@ -24,4 +25,15 @@ tags:
 ### Gitflow
 
 * https://medium.com/@olivier.bossel/git-flow-the-right-way-to-go-f2a65c315818
+
+
+### Docker Tutoriais
+
+- https://www.docker.com/101-tutorial
+- https://docker-curriculum.com/
+- https://www.ionos.es/digitalguide/servidores/configuracion/tutorial-docker-instalacion-y-primeros-pasos/
+
+### CORS
+
+- https://dev.to/lydiahallie/cs-visualized-cors-5b8h
 
