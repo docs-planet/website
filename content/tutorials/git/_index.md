@@ -4,7 +4,7 @@ description: "Conteudo relacionado a Git"
 weight: 1
 chapter: true
 tags:
-  - azure
+  - git
 ---
 
 ### GIT - Controle de Versão
