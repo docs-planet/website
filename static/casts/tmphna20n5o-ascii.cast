@@ -1,0 +1,7 @@
+{"version": 2, "width": 110, "height": 28, "timestamp": 1598647319, "idle_time_limit": 2.0, "env": {"SHELL": "/bin/bash", "TERM": "xterm-256color"}}
+[0.543568, "o", "\u001b[0;32m✔\u001b[0;0m \u001b[0;37m17:42:00 [x420ua]\u001b[0;0m \u001b[0;36mtutorial-git\u001b[0;0m\u001b]0;~/projetos/tutorial-git\u0007 [\u001b[0;35mdevelop\u001b[0;0m L\u001b[0;0m \u001b[1;32m✔\u001b[0;0m\u001b[0;0m\u001b[0;0m]\u001b[0;0m $ "]
+[3.331258, "o", "git flow release start 0.1.0\r\n"]
+[3.531876, "o", "Switched to a new branch 'release/0.1.0'\r\n"]
+[3.53238, "o", "\r\nSummary of actions:\r\n- A new branch 'release/0.1.0' was created, based on 'develop'\r\n"]
+[3.539788, "o", "- You are now on branch 'release/0.1.0'\r\n\r\nFollow-up actions:\r\n- Bump the version number now!\r\n- Start committing last-minute fixes in preparing your release\r\n- When done, run:\r\n\r\n     git flow release finish '0.1.0'\r\n\r\n"]
+[3.688066, "o", "\u001b[0;32m✔\u001b[0;0m \u001b[0;37m17:42:03 [x420ua]\u001b[0;0m \u001b[0;36mtutorial-git\u001b[0;0m\u001b]0;~/projetos/tutorial-git\u0007 [\u001b[0;35mrelease/0.1.0\u001b[0;0m L\u001b[0;0m \u001b[1;32m✔\u001b[0;0m\u001b[0;0m\u001b[0;0m]\u001b[0;0m $ "]

@@ -54,6 +54,140 @@ Logo inicializamos o git flow:
 ```shell
 git flow init -d
 ```
-> a opcão -d, permite configurar o git flow com os valores default.
+> A opcão -d, permite configurar o git flow com os nomes default
 
 {{< asciinema key="tmp6vglj6iw-ascii" rows="28" cols="110" preload="1" poster="npt:0:21" speed="1.5" >}}
+
+Note que, durante a execução do comando, o Git Flow criará a branch develop e fará git checkout automático para esta branch.
+
+### 3. Criando uma feature branch
+
+Agora, vamos criar uma nova feature branch? Para fazer isso, execute o comando:
+
+```shell
+git flow feature start recurso-milionario
+```
+
+Aquilo irá criar uma nova feature branch chamada **recurso-milionario**, com o nome **feature/recurso-milionario**. Antes vamos explorar quais sao as branch q foram criadas:
+
+{{< asciinema key="tmp5cfxashy-ascii" rows="28" cols="110" preload="1" poster="npt:0:18" speed="1.5" >}}
+
+### 4. Trabalhando na feature branch
+
+Nesta nova branch criaremos um arquivo recurso.txt com o conteúdo "Este é o melhor recurso criado desde sempre!". Logo executaremos os comandos "git add recurso.txt" e "git commit -m 'Finished feature'" para adicionar e commitar o arquivo em questão na feature branch recurso-milionario
+
+```shell
+echo 'Este é o melhor recurso criado desde sempre!' > recurso.txt
+git add recurso.txt
+git commit -m 'Finished feature'
+```
+
+{{< asciinema key="tmp3znpy8_2-ascii" rows="28" cols="110" preload="1" poster="npt:0:18" speed="1.5" >}}
+
+### 5. Finalizando os trabalhos na feature branch
+
+Com o commit feito, podemos finalmente juntá-lo a branch develop. Para fazer isso, execute o comando 
+
+```shell
+git flow feature finish recurso-milionario
+```
+
+{{< asciinema key="tmpk97y4ewl-ascii" rows="28" cols="110" preload="1" poster="npt:0:18" speed="1.5" >}}
+
+Como você pode ver, a branch feature/recurso-milionario foi correspondentemente integrada à branch develop e o git flow fez checkout automático para a branch develop, te mostrando todos os passos feitos.
+
+### 6. Criando uma release branch
+
+Agora que temos na branch develop os cambios que queriamos ter, vamos criar uma release branch para poder enfim publicar a atualização na branch master. Para fazer isso, execute o comando 
+
+```shell
+git flow release start 0.1.0
+```
+
+{{< asciinema key="tmphna20n5o-ascii" rows="28" cols="110" preload="1" poster="npt:0:18" speed="1.5" >}}
+
+### 7. Alterando a release branch
+
+Agora, com a release branch criada, vamos apenas fazer uma pequena alteração no arquivo recurso.txt, modificando a frase:
+
+De: "Este é o melhor recurso criado desde sempre!"
+
+Para: "Este talvez seja o melhor recurso criado desde sempre!"
+
+Logo commitaremos a mudança
+
+```shell
+git add recurso.txt
+git commit -m 'Little bug-fix in feature'
+```
+
+{{< asciinema key="tmpu3svigg1-ascii" rows="28" cols="110" preload="1" poster="npt:0:18" speed="1.5" >}}
+
+Mudanças podem ser feitas antes da branch ser juntada com a branch master
+
+### 8. Finalizando a release
+
+Com a mudança registrada, vamos enfim juntar a release branch 0.1.0 com a branch master e a branch develop, para isso, vamos usar o comando
+
+```shell
+git flow release finish 0.1.0
+```
+
+Aquilo vai integrar a mudança feita à release branch 0.1.0 com as branches master e develop
+
+{{< asciinema key="356547" rows="28" cols="110" preload="1" poster="npt:0:18" speed="1.5" >}}
+
+Como você pode ver acima, o Git Flow abre o editor de texto três vezes:
+
+* Uma para você editar o texto do merge commit relacionado ao merge entre a release branch 0.1.0 e a branch master
+
+* Um para a descrição da tag 0.1.0, que será criada pelo Git Flow para facilitar mudanças de versão no software
+
+* Uma para você editar o texto do merge commit relacionado ao merge entre a branch master e a branch develop
+
+### 9. Criando um hotfix
+
+Agora suponhamos que foi encontrado um bug hiper-critico na aplicação (coincidentemente, nesse exemplo, suponhamos que foi no mesmo recurso recém adicionado) e que ele é tão grave que está afetando o uso por todos os usuários da aplicação e por isso precisa ser corrigido com urgência máxima.
+
+Para corrigir esse bug critico, vamos criar um hotfix usando o comando
+
+```shell
+git flow hotfix start 0.1.1
+```
+
+Aquilo criará uma hotfix branch chamada 0.1.1 que resolve um problema encontrado no release 0.1.0
+
+{{< asciinema key="356548" rows="28" cols="110" preload="1" poster="npt:0:18" speed="1.5" >}}
+
+### 10. Corrigindo na branch hotfix
+
+Agora que temos a nossa hotfix branch 0.1.1 criada, vamos editar o arquivo recurso.txt com a correção que queremos aplicar, substituindo a frase:
+
+"Este talvez seja o melhor recurso criado desde sempre!", Para:
+
+"Este talvez não seja o melhor recurso criado desde sempre! Mas é um dos mais legais!"
+
+no arquivo recurso.txt. Logo comitaremos este cambio:
+
+{{< asciinema key="tmpjck4ihiu-ascii" rows="28" cols="110" preload="1" poster="npt:0:22" speed="1.5" >}}
+
+### 11. Finalizando o hotfix
+
+Com o "bug" corrigido e comittado, podemos agora finalizar nossa hotfix branch e com isso juntá-la à branch master e à branch develop. Para fazer isso, basta usar o comando
+
+```shell
+git flow hotfix finish 0.1.1
+```
+Aquilo fará todas essas tarefas por nós e ainda criará uma tag para marcar a correção
+
+{{< asciinema key="tmpo5eyt2vi-ascii" rows="28" cols="110" preload="1" poster="npt:0:22" speed="1.5" >}}
+
+Novamente, como no caso do git flow release finish, estudado acima, o git flow abre o editor três vezes: Uma para editar o merge commit para o merge com a branch master, outra para editar a descrição da tag que será criada pelo Git Flow, e outra para o merge commit para o merge da branch master com a branch develop.
+
+## Conclusões
+
+O Gitflow é um modelo de organização de branches é ideal para trabalhar com projetos em equipe, pois permite que cada membro da equipe trabalhe em cada feature branch com maestria e ainda resolva bugs importantes quando eles forem encontrados.
+
+## Referências
+
+- http://github.com/nvie/gitflow
