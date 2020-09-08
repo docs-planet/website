@@ -464,10 +464,10 @@ h1 {
     font-weight: 200;
 }
 blockquote {
-    border-left: 10px solid #F0F2F4;
+    border-left: 10px solid #d6d6d6;
 }
 blockquote p {
-    color: #999;
+    color: #5d5d5d;
 }
 blockquote cite {
     display: block;
