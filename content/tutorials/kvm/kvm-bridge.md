@@ -20,7 +20,7 @@ Verificando qual é o nome da minha interfaz de rede
 ```
 nmcli device status
 ```
-> Observer o resultado da columna DEVICE
+> Observe o resultado da columna DEVICE
 
 Com esse dado configuramos via netplan a configuração bridge adicionando um arquivo yaml.
 
