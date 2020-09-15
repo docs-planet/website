@@ -38,9 +38,11 @@ Crie um arquivo `~/.ansible.cfg`
 ```shell
 cat << 'EOF' > ~/.ansible.cfg
 [defaults]
-inventory         = ~/ansible/hosts
-roles_path        = ~/ansible/roles
-host_key_checking = False
+inventory=~/ansible/hosts
+roles_path= ~/ansible/roles
+retry_files_enabled=False
+host_key_checking=False
+remote_user=centos
 
 [privilege_escalation]
 become=True
@@ -51,13 +53,14 @@ EOF
 
 ### Testando
 
-```
+```shell
 ansible --version
+ansible-config view
 ```
 
 -----
 
-{{< asciinema key="tmp38k3hpwz-ascii" rows="28" cols="110" preload="1" poster="npt:0:01" speed="2" >}}
+{{< asciinema key="tmpkza8f56t-ascii" rows="28" cols="110" preload="1" poster="npt:0:01" speed="2" >}}
 
 -----
 

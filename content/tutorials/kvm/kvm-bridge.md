@@ -3,6 +3,7 @@ title: "KVM - Bridge Setup"
 description: "Configurando KVM em modo bridge"
 asciinema: true
 comments: true
+weight: 2
 tags:
   - kvm
 ---

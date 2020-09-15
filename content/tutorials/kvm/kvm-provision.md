@@ -2,6 +2,7 @@
 title: "KVM - Provision"
 description: "Provisionando maquinas virtuais de maneira simples"
 asciinema: true
+weight: 3
 comments: true
 tags:
   - kvm
