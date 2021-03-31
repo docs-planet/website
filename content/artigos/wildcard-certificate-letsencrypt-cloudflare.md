@@ -10,6 +10,11 @@ tags:
 
 ## Steps
 
+Prerequisites:
+
+* Ubuntu 20.04 
+
+
 ### 1. Obter as credenciais do Cloudflare API
 
 Pegar o Global API Key:
@@ -35,9 +40,8 @@ EOF
 sudo apt-get update
 sudo apt-get install software-properties-common
 sudo add-apt-repository universe
-sudo add-apt-repository ppa:certbot/certbot
 sudo apt-get update
-sudo apt-get install certbot python-certbot-nginx python3-certbot-dns-cloudflare
+sudo apt-get install certbot python3-certbot-dns-cloudflare
 ```
 
 ### 4. Rodar o Certbot com o cloudflare authenticator
